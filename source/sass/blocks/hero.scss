@@ -41,6 +41,17 @@
         url("../img/hero-bg-sm@2x.png") type("image/jpeg") 2x
       );
   }
+
+  @media (min-width: $md-width) {
+    padding: 100px 0 120px;
+    background-image:
+      image-set(
+        url("../img/hero-bg-md@1x.webp") type("image/webp") 1x,
+        url("../img/hero-bg-md@2x.webp") type("image/webp") 2x,
+        url("../img/hero-bg-md@1x.png") type("image/jpeg") 1x,
+        url("../img/hero-bg-md@2x.png") type("image/jpeg") 2x
+      );
+  }
 }
 
 .hero__wrapper {
@@ -54,5 +65,9 @@
 
   @media (min-width: $sm-width) {
     padding: 0 125px;
+  }
+
+  @media (min-width: $md-width) {
+    padding: 0 185px;
   }
 }

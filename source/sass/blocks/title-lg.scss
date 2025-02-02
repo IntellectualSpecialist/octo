@@ -10,4 +10,14 @@
   &--alt {
     color: $color-primary;
   }
+
+  @media (min-width: $md-width) {
+    font-size: 54px;
+    line-height: 60px;
+    letter-spacing: 1.2px;
+
+    &--alt {
+      text-align: left;
+    }
+  }
 }

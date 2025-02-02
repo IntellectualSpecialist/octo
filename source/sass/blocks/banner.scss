@@ -11,6 +11,11 @@
   @media (min-width: $sm-width) {
     padding: 70px 0;
   }
+
+  @media (min-width: $md-width) {
+    padding: 80px 0;
+    text-align: left;
+  }
 }
 
 .banner__wrapper {
@@ -21,10 +26,28 @@
   @media (min-width: $sm-width) {
     padding: 0 86px;
   }
+
+  @media (min-width: $md-width) {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    padding: 0 26px;
+  }
+}
+
+.banner__text-content {
+  @media (min-width: $md-width) {
+    width: 50%;
+    padding-top: 23px;
+  }
 }
 
 .banner__title {
   margin-bottom: 14px;
+
+  @media (min-width: $md-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .banner__description {
@@ -40,6 +63,11 @@
     gap: 16px;
     justify-content: center;
   }
+
+  @media (min-width: $md-width) {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
 }
 
 .banner__button {
@@ -54,6 +82,10 @@
     width: auto;
     margin: 0;
   }
+
+  @media (min-width: $md-width) {
+    width: 150px;
+  }
 }
 
 .banner__image {
@@ -62,13 +94,25 @@
     width: 100%;
     height: auto;
     aspect-ratio: 290 / 146;
+  }
 
-    @media (min-width: $ssm-width) {
+  @media (min-width: $ssm-width) {
+    img {
       aspect-ratio: 450 / 275;
     }
+  }
 
-    @media (min-width: $sm-width) {
+  @media (min-width: $sm-width) {
+    img {
       aspect-ratio: 596 / 364;
+    }
+  }
+
+  @media (min-width: $md-width) {
+    width: 50%;
+
+    img {
+      aspect-ratio: 455 / 332;
     }
   }
 }

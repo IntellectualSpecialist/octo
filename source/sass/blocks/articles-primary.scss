@@ -4,6 +4,10 @@
   @media (min-width: $sm-width) {
     padding: 60px 0;
   }
+
+  @media (min-width: $md-width) {
+    padding: 80px 0;
+  }
 }
 
 .articles-primary__list {

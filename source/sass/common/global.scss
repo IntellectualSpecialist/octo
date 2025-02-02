@@ -20,6 +20,12 @@ body {
   letter-spacing: 1px;
   color: $text-base;
   word-wrap: break-word;
+
+  @media (min-width: $md-width) {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1.2px;
+  }
 }
 
 main {

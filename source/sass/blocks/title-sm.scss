@@ -4,4 +4,10 @@
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 1px;
+
+  @media (min-width: $md-width) {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1.2px;
+  }
 }
