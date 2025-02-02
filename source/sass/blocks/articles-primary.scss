@@ -4,6 +4,12 @@
 
 .articles-primary__list {
   @include list-reset;
+
+  @media (min-width: $ssm-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
 }
 
 .articles-primary__item {
@@ -15,5 +21,13 @@
 
   &:not(:first-child):not(:nth-child(3)) {
     display: none;
+  }
+
+  @media (min-width: $ssm-width) {
+    margin-bottom: 0;
+
+    &:not(:nth-child(2)):not(:nth-child(5)):not(:last-child) {
+      display: block;
+    }
   }
 }

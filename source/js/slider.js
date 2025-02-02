@@ -26,9 +26,9 @@ const initSlider = (sliderElement) => {
         prevEl: sliderNavigationPrevElement,
       },
       breakpoints: {
-        700: {
+        576: {
           slidesPerView: 2,
-          spaceBetween: 25,
+          spaceBetween: 30,
         },
       },
     });

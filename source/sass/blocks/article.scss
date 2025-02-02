@@ -49,6 +49,10 @@
   &--alt-second {
     background-color: $color-primary;
   }
+
+  &--alt-third {
+    background-color: $base-black;
+  }
 }
 
 .article__author {
@@ -74,8 +78,13 @@
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 0.6px;
+  line-clamp: 3;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  @media (min-width: $ssm-width) {
+    padding-right: 30px;
+  }
 }

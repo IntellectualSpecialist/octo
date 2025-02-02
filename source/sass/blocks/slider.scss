@@ -3,6 +3,10 @@
   gap: 7px;
   margin-top: 20px;
   justify-content: center;
+
+  @media (min-width: $ssm-width) {
+    justify-content: flex-start;
+  }
 }
 
 .slider__button {

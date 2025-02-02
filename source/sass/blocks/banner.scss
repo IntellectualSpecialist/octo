@@ -3,6 +3,16 @@
   text-align: center;
   color: $base-white;
   background-color: $base-black;
+
+  @media (min-width: $ssm-width) {
+    padding: 60px 0;
+  }
+}
+
+.banner__wrapper {
+  @media (min-width: $ssm-width) {
+    padding: 0 63px;
+  }
 }
 
 .banner__title {
@@ -15,6 +25,13 @@
 
 .banner__buttons {
   margin-bottom: 30px;
+
+  @media (min-width: $ssm-width) {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    justify-content: center;
+  }
 }
 
 .banner__button {
@@ -24,6 +41,11 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: $ssm-width) {
+    width: auto;
+    margin: 0;
+  }
 }
 
 .banner__image {
@@ -32,5 +54,9 @@
     width: 100%;
     height: auto;
     aspect-ratio: 290 / 146;
+
+    @media (min-width: $ssm-width) {
+      aspect-ratio: 450 / 275;
+    }
   }
 }
