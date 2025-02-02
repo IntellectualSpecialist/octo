@@ -20,4 +20,10 @@
       text-align: left;
     }
   }
+
+  @media (min-width: $lg-width) {
+    font-size: 62px;
+    line-height: 68px;
+    letter-spacing: 1.4px;
+  }
 }
