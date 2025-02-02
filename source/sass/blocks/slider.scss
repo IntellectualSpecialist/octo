@@ -6,6 +6,7 @@
 
   @media (min-width: $ssm-width) {
     justify-content: flex-start;
+    margin-left: -6px;
   }
 
   @media (min-width: $sm-width) {
@@ -16,6 +17,10 @@
   @media (min-width: $md-width) {
     margin-top: 40px;
   }
+}
+
+.slider .slider__slide {
+  height: auto;
 }
 
 .slider__button {

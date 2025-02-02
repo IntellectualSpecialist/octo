@@ -40,6 +40,7 @@
 
   @media (min-width: $lg-width) {
     gap: 127px;
+    padding: 0 40px;
   }
 }
 
@@ -68,6 +69,7 @@
 }
 
 .banner__description {
+  margin: 0;
   margin-bottom: 30px;
 
   @media (min-width: $lg-width) {
@@ -83,6 +85,7 @@
     align-items: flex-start;
     gap: 16px;
     justify-content: center;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $md-width) {

@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  height: 100%;
   padding: 15px;
   padding-bottom: 19px;
   border: 1px solid $color-hawkes-blue;
@@ -16,6 +17,10 @@
 
   &--accent .article__author {
     color: $color-accent;
+  }
+
+  &--custom .article__category span:last-child {
+    display: none;
   }
 
   @media (min-width: $ssm-width) {
@@ -42,6 +47,16 @@
         width: 22ch;
         overflow: hidden;
         white-space: nowrap;
+      }
+
+      .article__category {
+        span:first-child {
+          display: none;
+        }
+
+        span:last-child {
+          display: inline;
+        }
       }
     }
   }
@@ -132,6 +147,12 @@
 
 .article__title {
   margin-bottom: 10px;
+
+  @media (min-width: $ssm-width) {
+    span span {
+      display: none;
+    }
+  }
 
   @media (min-width: $sm-width) {
     margin-bottom: 12px;
