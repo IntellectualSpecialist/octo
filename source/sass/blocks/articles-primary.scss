@@ -1,0 +1,19 @@
+.articles-primary {
+  padding: 50px 0;
+}
+
+.articles-primary__list {
+  @include list-reset;
+}
+
+.articles-primary__item {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:not(:first-child):not(:nth-child(3)) {
+    display: none;
+  }
+}

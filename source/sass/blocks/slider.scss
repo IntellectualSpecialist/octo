@@ -1,0 +1,49 @@
+.slider__navigation {
+  display: flex;
+  gap: 7px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.slider__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 22px;
+    background-color: $color-primary;
+    mask-image: url("../../__spritemap#sprite-arrow-icon-view");
+    mask-repeat: no-repeat;
+    mask-size: 11px 22px;
+    mask-position: center;
+  }
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:disabled,
+  &--disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  &--prev::before {
+    transform: rotate(180deg);
+  }
+}

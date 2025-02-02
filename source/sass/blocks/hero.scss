@@ -1,0 +1,26 @@
+.hero {
+  position: relative;
+  padding: 60px 0 70px;
+  background-image:
+    image-set(
+      url("../img/hero-bg-xs@1x.webp") type("image/webp") 1x,
+      url("../img/hero-bg-xs@2x.webp") type("image/webp") 2x,
+      url("../img/hero-bg-xs@1x.png") type("image/jpeg") 1x,
+      url("../img/hero-bg-xs@2x.png") type("image/jpeg") 2x
+    );
+  background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $color-transparent;
+  }
+}
+
+.hero__wrapper {
+  position: relative;
+}

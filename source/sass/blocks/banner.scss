@@ -1,0 +1,36 @@
+.banner {
+  padding: 50px 0;
+  text-align: center;
+  color: $base-white;
+  background-color: $base-black;
+}
+
+.banner__title {
+  margin-bottom: 14px;
+}
+
+.banner__description {
+  margin-bottom: 30px;
+}
+
+.banner__buttons {
+  margin-bottom: 30px;
+}
+
+.banner__button {
+  width: 100%;
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.banner__image {
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 290 / 146;
+  }
+}

@@ -4,27 +4,165 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internship</title>
+    <title>Octo</title>
+    <meta name="description" content="Solutions for people like you">
+    <link rel="preload" href="fonts/notosans-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="programs">programs</div>
-    <div data-test="grant">grant</div>
-    <div data-test="news">news</div>
-    <div data-test="FAQ">FAQ</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="contacts">contacts</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="hero__wrapper container">
+          <h1 class="hero__title title-lg">Solutions for people like you</h1>
+        </div>
+      </section>
+      <section class="articles-primary">
+        <h2 class="visually-hidden">Articles</h2>
+        <div class="articles-primary__wrapper container">
+          <ul class="articles-primary__list">
+            <li class="articles-primary__item article">
+              <span class="article__category">Category | Marketing</span>
+              <div class="article__image"></div>
+              <p class="article__author">Adam Sendler</p>
+              <h3 class="article__title title-sm">Solutions for people like you like people solutions for people like you like people</h3>
+              <p class="article__description">How can we help your technology and services business develop a revenue engine based <span>Простодлинноеслово</span></p>
+              <a class="article__button button button--primary" href="#">Call to action</a>
+            </li>
+            <li class="articles-primary__item article">
+              <span class="article__category">Category</span>
+              <div class="article__image">
+                <picture>
+                  <source width="300" height="200" type="image/webp" srcset="img/article-1@1x.webp, img/article-1@2x.webp 2x">
+                  <img src="img/article-1@1x.jpg" srcset="img/article-1@2x.jpg 2x" width="300" height="200" alt="Ветви с цветами.">
+                </picture>
+              </div>
+              <p class="article__author">Adam Sendler</p>
+              <h3 class="article__title title-sm">Solutions for people like you like people solutions for people like you like people</h3>
+              <p class="article__description">How can we help your technology and services business develop a revenue engine based <span>Простодлинноеслово</span></p>
+              <a class="article__button button button--primary" href="#">Call to action</a>
+            </li>
+            <li class="articles-primary__item article article--accent">
+              <span class="article__category">Category | Marketing</span>
+              <div class="article__image article__image--alt-first"></div>
+              <p class="article__author">Adam Sendler</p>
+              <h3 class="article__title title-sm">Solutions for people like you like people solutions for people like you like people</h3>
+              <p class="article__description">How can we help your technology and services business develop a revenue engine based <span>Простодлинноеслово</span></p>
+              <a class="article__button button button--accent" href="#">Call to action</a>
+            </li>
+            <li class="articles-primary__item article article--accent">
+              <span class="article__category">Category | Marketing</span>
+              <div class="article__image article__image--alt-second"></div>
+              <p class="article__author">Adam Sendler</p>
+              <h3 class="article__title title-sm">Solutions for people like you like people solutions for people like you like people</h3>
+              <p class="article__description">How can we help your technology and services business develop a revenue engine based <span>Простодлинноеслово</span></p>
+              <a class="article__button button button--accent" href="#">Call to action</a>
+            </li>
+            <li class="articles-primary__item article">
+              <span class="article__category">Category | Marketing</span>
+              <div class="article__image">
+                <picture>
+                  <source width="300" height="200" type="image/webp" srcset="img/article-2@1x.webp, img/article-2@2x.webp 2x">
+                  <img src="img/article-2@1x.jpg" srcset="img/article-2@2x.jpg 2x" width="300" height="200" alt="Фотоаппарат Canon.">
+                </picture>
+              </div>
+              <p class="article__author">Adam Sendler</p>
+              <h3 class="article__title title-sm">Solutions for people like you like people solutions for people like you like people</h3>
+              <p class="article__description">How can we help your technology and services business develop a revenue engine based <span>Простодлинноеслово</span></p>
+              <a class="article__button button button--primary" href="#">Call to action</a>
+            </li>
+            <li class="articles-primary__item article article--accent">
+              <span class="article__category">Category | Marketing</span>
+              <div class="article__image article__image"></div>
+              <p class="article__author">Adam Sendler</p>
+              <h3 class="article__title title-sm">Solutions for people like you like people solutions for people like you like people</h3>
+              <p class="article__description">How can we help your technology and services business develop a revenue engine based <span>Простодлинноеслово</span></p>
+              <a class="article__button button button--accent" href="#">Call to action</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <article class="banner">
+        <div class="banner__wrapper container">
+          <div class="banner__text-content">
+            <h2 class="banner__title title-lg title-lg--alt">Solutions for people like you</h2>
+            <p class="banner__description">How can we help your technology and services business develop a revenue engine based on Hubspot?</p>
+            <div class="banner__buttons">
+              <a class="banner__button button button--primary" href="#">Call to action</a>
+              <a class="banner__button button button--secondary" href="#">Call to action</a>
+            </div>
+          </div>
+          <div class="banner__image">
+            <picture>
+              <source width="458" height="380" type="image/webp" media="(min-width: 1200px)" srcset="img/canon-lg@1x.webp, img/canon-lg@2x.webp 2x">
+              <source width="445" height="332" type="image/webp" media="(min-width: 992px)" srcset="img/canon-md@1x.webp, img/canon-md@2x.webp 2x">
+              <source width="596" height="364" type="image/webp" media="(min-width: 768px)" srcset="img/canon-sm@1x.webp, img/canon-sm@2x.webp 2x">
+              <source width="450" height="275" type="image/webp" media="(min-width: 576px)" srcset="img/canon-ssm@1x.webp, img/canon-ssm@2x.webp 2x">
+              <source width="290" height="146" type="image/webp" srcset="img/canon-xs@1x.webp, img/canon-xs@2x.webp 2x">
+              <source width="458" height="380" type="image/jpeg" media="(min-width: 1200px)" srcset="img/canon-lg@1x.jpg, img/canon-lg@2x.jpg 2x">
+              <source width="445" height="332" type="image/jpeg" media="(min-width: 992px)" srcset="img/canon-md@1x.jpg, img/canon-md@2x.jpg 2x">
+              <source width="596" height="364" type="image/jpeg" media="(min-width: 768px)" srcset="img/canon-sm@1x.jpg, img/canon-sm@2x.jpg 2x">
+              <source width="450" height="275" type="image/jpeg" media="(min-width: 576px)" srcset="img/canon-ssm@1x.jpg, img/canon-ssm@2x.jpg 2x">
+              <img src="img/canon-xs@1x.jpg" srcset="img/canon-xs@2x.jpg 2x" width="290" height="146" alt="Фотоаппарат Canon.">
+            </picture>
+          </div>
+        </div>
+      </article>
+      <section class="articles-secondary">
+        <h2 class="visually-hidden">Articles</h2>
+        <div class="articles-secondary__wrapper container">
+          <div class="articles-secondary__slider slider">
+            <div class="slider__swiper swiper">
+              <div class="slider__wrapper swiper-wrapper">
+                <div class="slider__slide swiper-slide">
+                  <article class="articles-primary__item article">
+                    <span class="article__category">Category | Marketing</span>
+                    <div class="article__image"></div>
+                    <p class="article__author">Adam Sendler</p>
+                    <h3 class="article__title title-sm">Solutions for people like you like people solutions for people like you like people</h3>
+                    <p class="article__description">How can we help your technology and services business develop a revenue engine based <span>Простодлинноеслово</span></p>
+                    <a class="article__button button button--primary" href="#">Call to action</a>
+                  </article>
+                </div>
+                <div class="slider__slide swiper-slide">
+                  <article class="articles-primary__item article article--accent">
+                    <span class="article__category">Category | Marketing</span>
+                    <div class="article__image article__image--alt-first"></div>
+                    <p class="article__author">Adam Sendler</p>
+                    <h3 class="article__title title-sm">Solutions for people like you like people solutions for people like you like people</h3>
+                    <p class="article__description">How can we help your technology and services business develop a revenue engine based <span>Простодлинноеслово</span></p>
+                    <a class="article__button button button--accent" href="#">Call to action</a>
+                  </article>
+                </div>
+                <div class="slider__slide swiper-slide">
+                  <article class="articles-primary__item article">
+                    <span class="article__category">Category</span>
+                    <div class="article__image">
+                      <picture>
+                        <source width="300" height="200" type="image/webp" srcset="img/article-1@1x.webp, img/article-1@2x.webp 2x">
+                        <img src="img/article-1@1x.jpg" srcset="img/article-1@2x.jpg 2x" width="300" height="200" alt="Ветви с цветами.">
+                      </picture>
+                    </div>
+                    <p class="article__author">Adam Sendler</p>
+                    <h3 class="article__title title-sm">Solutions for people like you like people solutions for people like you like people</h3>
+                    <p class="article__description">How can we help your technology and services business develop a revenue engine based <span>Простодлинноеслово</span></p>
+                    <a class="article__button button button--primary" href="#">Call to action</a>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="slider__navigation">
+              <button class="slider__button slider__button--prev swiper-button-prev" type="button">
+                <span class="visually-hidden">Предыдущий слайд</span>
+              </button>
+              <button class="slider__button slider__button--next swiper-button-next" type="button">
+                <span class="visually-hidden">Следующий слайд</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script type="module" src="js/main.js"></script>
   </body>
 

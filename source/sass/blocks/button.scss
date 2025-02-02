@@ -1,0 +1,44 @@
+.button {
+  display: block;
+  width: fit-content;
+  padding: 6px 26px 8px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  color: $base-white;
+  cursor: pointer;
+  border: 2px solid transparent;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+  }
+
+  &:active,
+  &:disabled,
+  &--disabled {
+    opacity: 0.4;
+  }
+
+  :disabled,
+  &--disabled {
+    pointer-events: none;
+  }
+
+  &--primary {
+    background-color: $color-primary;
+    border-color: $color-primary;
+  }
+
+  &--secondary {
+    background-color: transparent;
+    border-color: $color-primary;
+  }
+
+  &--accent {
+    background: $color-accent;
+    border-color: $color-accent;
+  }
+}
