@@ -1,3 +1,7 @@
 .articles-secondary {
   padding: 50px 0;
+
+  @media (min-width: $sm-width) {
+    padding: 60px 0;
+  }
 }

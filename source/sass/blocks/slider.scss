@@ -7,6 +7,11 @@
   @media (min-width: $ssm-width) {
     justify-content: flex-start;
   }
+
+  @media (min-width: $sm-width) {
+    margin-top: 30px;
+    gap: 12px;
+  }
 }
 
 .slider__button {
@@ -30,6 +35,17 @@
     mask-repeat: no-repeat;
     mask-size: 11px 22px;
     mask-position: center;
+  }
+
+  @media (min-width: $sm-width) {
+    width: 26px;
+    height: 26px;
+
+    &::before {
+      width: 13px;
+      height: 26px;
+      mask-size: 13px 26px;
+    }
   }
 
   &:hover,
